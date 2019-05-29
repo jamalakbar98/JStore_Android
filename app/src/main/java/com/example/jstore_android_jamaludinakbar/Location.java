@@ -5,71 +5,33 @@ public class Location {
     private String description;
     private String city;
 
-    //Konstruktor dari kelas Supplier
-    public Location(String city, String province, String description)
-    {
-        this.city=city;
-        this.province=province;
-        this.description=description;
+    public Location(String province, String description, String city) {
+        this.province = province;
+        this.description = description;
+        this.city = city;
     }
 
-    //Menampilkan nama provinsi
-    /**
-     * Method getProvince()
-     * @return province
-     */
-    public String getProvince()
-    {
-        return province;
+    public String getProvince() {
+        return this.province;
     }
 
-    //Menampilkan nama kota
-    /**
-     * Method getCity()
-     * @return city
-     */
-    public String getCity()
-    {
-        return city;
+    public String getDescription() {
+        return this.description;
     }
 
-    //Menampilkan deskripsi lokasi
-    /**
-     * Method getDescription()
-     * @return description
-     */
-    public String getDescription()
-    {
-        return description;
+    public String getCity() {
+        return this.city;
     }
 
-    //Mengganti nama provinsi
-    /**
-     * Method setProvince()
-     * @param province
-     */
-    public void setProvince(String province)
-    {
-        this.province=province;
+    public void setProvince(String province) {
+        this.province = province;
     }
 
-    //Mengganti nama kota
-    /**
-     * Method setCity()
-     * @param city
-     */
-    public void setCity(String city)
-    {
-        this.city=city;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    //Mengganti deskripsi lokasi
-    /**
-     * Method setDescription()
-     * @param description
-     */
-    public void setDescription(String description)
-    {
-        this.description=description;
+    public void setCity(String city) {
+        this.city = city;
     }
 }

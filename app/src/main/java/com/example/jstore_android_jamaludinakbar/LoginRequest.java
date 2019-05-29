@@ -7,19 +7,18 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LoginRequest extends StringRequest {
-    private static final String Regis_URL = "http://192.168.137.1:8080/logincust";
+    private static final String Regis_URL = "http://192.168.43.100:8085/logincust";
     private Map<String, String> params;
 
-    public LoginRequest(String email, String password, Response.Listener<String> listener)
-    {
-        super (Method.POST, Regis_URL, listener, null);
+    public LoginRequest(String email, String password, Response.Listener<String> listener) {
+        super(Method.POST, Regis_URL, listener, null);
         params = new HashMap<>();
-        params.put("Email : ", email);
-        params.put("Password : ", password);
+        params.put("email", email);
+        params.put("password", password);
     }
+
     @Override
-    public Map<String, String> getParams()
-    {
+    public Map<String, String> getParams(){
         return params;
     }
 }
